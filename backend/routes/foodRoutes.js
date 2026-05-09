@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+const { getAllFoods, getFoodById, getFoodsByCategory, addFood, updateFood, deleteFood } = require('../controllers/foodController');
+const { protect, isAdmin } = require('../middleware/authMiddleware');
+router.get('/', getAllFoods);
+router.get('/category/:category', getFoodsByCategory);
+router.get('/:id', getFoodById);
+router.post('/', protect, isAdmin, addFood);
+router.put('/:id', protect, isAdmin, updateFood);
+router.delete('/:id', protect, isAdmin, deleteFood);
+module.exports = router;
