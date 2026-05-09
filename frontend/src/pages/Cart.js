@@ -24,7 +24,8 @@ const Cart = () => {
   };
   if (cart.length === 0) return (
     <div style={{textAlign:'center',padding:'80px 20px',fontSize:'20px'}}>
-      <p>Your cart is empty 🛒</p>
+      <p>Your cart is empty  🛒</p>
+      <p>Add somethingg to cart</p>
       <button onClick={() => navigate('/menu')} style={{marginTop:'16px',padding:'12px 28px',background:'#ff6b35',color:'#fff',border:'none',borderRadius:'8px',cursor:'pointer',fontSize:'15px'}}>Browse Menu</button>
     </div>
   );
