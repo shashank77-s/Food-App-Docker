@@ -6,7 +6,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/shashank77-s/Food-Docker.git'
+                git 'https://github.com/shashank77-s/Food-App-Docker.git'
             }
         }
 
