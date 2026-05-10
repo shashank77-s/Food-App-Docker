@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'14px 32px',background:'#ff6b35',color:'#fff',boxShadow:'0 2px 8px rgba(0,0,0,0.15)',position:'sticky',top:0,zIndex:100}}>
-      <Link to="/menu" style={{fontSize:'22px',fontWeight:'bold',color:'#fff',textDecoration:'none'}}>🍕 FOOD APP </Link>
+      <Link to="/menu" style={{fontSize:'22px',fontWeight:'bold',color:'#fff',textDecoration:'none'}}>🍕 FOOD APP  Delivery</Link>
       <div style={{display:'flex',alignItems:'center',gap:'20px'}}>
         {user ? (
           <>
