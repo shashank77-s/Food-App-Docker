@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleLogout = () => { logout(); navigate('/login'); };
 
   return (
-    <nav style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'14px 32px',background:'#000000',color:'#fff',boxShadow:'0 2px 8px rgba(0,0,0,0.15)',position:'sticky',top:0,zIndex:100}}>
+    <nav style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'14px 32px',background:'#1466ae',color:'#fff',boxShadow:'0 2px 8px rgba(0,0,0,0.15)',position:'sticky',top:0,zIndex:100}}>
     <Link to="/menu" style={{fontSize:'22px',fontWeight:'bold',color:'#fff',textDecoration:'none'}}>🍕 FOOD  Delivery APP </Link>
       <div style={{display:'flex',alignItems:'center',gap:'20px'}}>
         {user ? (
